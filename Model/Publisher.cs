@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace BookDbSetup.Model
 {
-    internal class Publisher
+    public class Publisher
     {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string City { get; set; }
     }
 }
