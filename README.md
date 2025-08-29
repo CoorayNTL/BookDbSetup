@@ -2,6 +2,8 @@
 
 <img width="1521" height="922" alt="Screenshot 2025-08-29 173710" src="https://github.com/user-attachments/assets/b00e8239-e7fa-4d2d-98eb-594caf7761bf" />
 
+## Question 2
+
 ## Overview
 This project implements a containerized MySQL database setup using Docker Compose to modernize development workflows for a simplified publishing domain. It includes three entities—Author, Book, and Publisher—with an initial schema, sample data seeding, and a schema migration. The solution leverages Docker Compose to ensure a repeatable and isolated environment.
 
