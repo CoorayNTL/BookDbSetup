@@ -9,11 +9,11 @@ namespace BookDbSetup
         public DbSet<Author> Authors { get; set; }
         public DbSet<Book> Books { get; set; }
         public DbSet<Publisher> Publishers { get; set; }
-        public DbSet<Genre> Genres { get; set; } 
+        public DbSet<Genre> Genres { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var connectionString = "Server=localhost;Port=3306;Database=publishingdb;User=root;Password=admin";
+            var connectionString = "Server=db;Port=3307;Database=publishingdb;User=root;Password=admin"; //updated with Docker connection string change to Srver=db
             optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
         }
 
